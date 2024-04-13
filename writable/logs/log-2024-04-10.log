@@ -1,0 +1,287 @@
+CRITICAL - 2024-04-10 22:47:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Admin.php(12): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:47:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Admin.php(12): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:47:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Admin.php(12): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:47:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Admin.php(12): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:49 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:51 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:51 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:52 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:52 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:52 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:52 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:53 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:53 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:50:54 --> ErrorException: include(include/head.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\index.php on line 9.
+ 1 APPPATH\Views\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/head.php): Failed to open stream: No such file or directory', 'C:\\Users\\HP\\cbeApp\\app\\Views\\index.php', 9)
+ 2 APPPATH\Views\index.php(9): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(12): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:56:30 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\index.php on line 12.
+ 1 APPPATH\Views\admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(12): view('admin/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:56:32 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\index.php on line 12.
+ 1 APPPATH\Views\admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(12): view('admin/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:57:53 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\index.php on line 12.
+ 1 APPPATH\Views\admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(12): view('admin/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:57:59 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\index.php on line 12.
+ 1 APPPATH\Views\admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(12): view('admin/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
+CRITICAL - 2024-04-10 22:58:21 --> ErrorException: Undefined property: CodeIgniter\View\View::$load
+[Method: GET, Route: admin/]
+in APPPATH\Views\admin\index.php on line 12.
+ 1 APPPATH\Views\admin\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\HP\\cbeApp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(12): view('admin/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\HP\\cbeApp\\public\\index.php')
