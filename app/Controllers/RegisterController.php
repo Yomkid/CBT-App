@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 use CodeIgniter\Controller;
+use Config\Email;
 
 class RegisterController extends Controller
 {
@@ -11,15 +12,18 @@ class RegisterController extends Controller
     {
         // Define validation rules
         $validationRules = [
-            'username' => 'required',
-            'email'    => 'required|valid_email',
-            'password' => 'required'
+            'first_name'    => 'required',
+            'last_name'     => 'required',
+            'phone_number'  => 'required',
+            'email'         => 'required|valid_email|is_unique[users.email]',
+            'password'      => 'required'
         ];
 
         // Set custom error messages
         $validationMessages = [
             'email' => [
-                'valid_email' => 'The {field} field must contain a valid email address.'
+                'is_unique'   => 'The {field} has already been taken',
+                'valid_email' => 'Invalid email address.'
             ]
         ];
 
@@ -38,9 +42,11 @@ class RegisterController extends Controller
         // Fetch the inserted user ID
         $userId = null;
         $data = [
-            'username' => $this->request->getPost('username'),
-            'email'    => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'first_name'    => $this->request->getPost('first_name'),
+            'last_name'     => $this->request->getPost('last_name'),
+            'email'         => $this->request->getPost('email'),
+            'phone_number'  => $this->request->getPost('phone_number'),
+            'password'      => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
         ];
 
         // Insert data into the database
@@ -49,7 +55,7 @@ class RegisterController extends Controller
         }
 
         // Generate filename with username, prefix, user ID, date, and time
-        $newName = $this->request->getPost('username') . '_img_JETA_' . $userId . '_' . date('YmdHis') . '_' . rand(100, 999) . '.' . $profileImage->getExtension();
+        $newName = $this->request->getPost('first_name') . '_img_JETA_' . $userId . '_' . date('YmdHis') . '.' . $profileImage->getExtension();
 
         // Move uploaded file to a directory (e.g., public/uploads)
         if ($profileImage->isValid() && !$profileImage->hasMoved()) {
@@ -60,6 +66,30 @@ class RegisterController extends Controller
         $data['profile_image'] = $newName;
         $model->update($userId, $data);
 
-        return redirect()->to('/login'); // Redirect to login page after successful registration
+        // Send registration notification email to the user
+        $this->sendRegistrationEmail($data['email']);
+
+        return redirect()->to('/login');// Redirect to login page after successful registration
+        // return redirect()->to('/login')->with('success', 'Registration successful. Please log in.'); // Redirect to login page after successful registration
+    }
+
+    /**
+     * Send registration notification email to the user
+     *
+     * @param string $email
+     */
+    private function sendRegistrationEmail(string $email)
+    {
+        $emailConfig = new Email();
+
+        $email = \Config\Services::email();
+        $email->initialize($emailConfig);
+
+        $email->setTo($email);
+        $email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+        $email->setSubject('Registration Successful');
+        $email->setMessage('Thank you for registering with us.');
+
+        $email->send();
     }
 }

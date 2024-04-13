@@ -21,8 +21,11 @@ $routes->get('/user', 'Admin::user');
 $routes->get('/question_bank', 'Admin::q_bank');
 $routes->get('/test', 'Admin::test');
 $routes->get('/login', 'Pages::login');
+$routes->get('/send_test_email', 'Pages::emailtest');
 $routes->post('auth/login', 'Auth::login');
 $routes->post('register', 'RegisterController::register');
+// $routes->post('register/check_email', 'RegisterController::check_email');
+$routes->post('validate', 'RegisterController::validates');
 
 
 

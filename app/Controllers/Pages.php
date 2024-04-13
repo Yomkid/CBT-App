@@ -40,4 +40,8 @@ class Pages extends BaseController
     {
         return view('login');
     }
+    public function emailtest()
+    {
+        return view('send_test_email');
+    }
 }
