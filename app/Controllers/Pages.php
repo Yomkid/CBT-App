@@ -44,4 +44,9 @@ class Pages extends BaseController
     {
         return view('send_test_email');
     }
+    public function access_denied()
+    {
+        return view('access-denied');
+    }
+    
 }

@@ -40,7 +40,10 @@ class Autoload extends AutoloadConfig
      * @var array<string, list<string>|string>
      */
     public $psr4 = [
-        APP_NAMESPACE => APPPATH,
+        'App' => APPPATH,
+        APP_NAMESPACE => APPPATH, // For custom namespace
+        'Config' => APPPATH . 'Config',
+        'App\Models' => APPPATH . 'Models', // Add this line if not present
     ];
 
     

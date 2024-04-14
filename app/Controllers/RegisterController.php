@@ -39,6 +39,10 @@ class RegisterController extends Controller
         // Get uploaded file
         $profileImage = $this->request->getFile('profile_image');
 
+         // Get role from form data or assign default role 'user'
+         $role = $this->request->getPost('role') ?? 'user';
+
+
         // Fetch the inserted user ID
         $userId = null;
         $data = [
@@ -47,6 +51,7 @@ class RegisterController extends Controller
             'email'         => $this->request->getPost('email'),
             'phone_number'  => $this->request->getPost('phone_number'),
             'password'      => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'role' => $role // Assign role to the user
         ];
 
         // Insert data into the database
@@ -67,29 +72,29 @@ class RegisterController extends Controller
         $model->update($userId, $data);
 
         // Send registration notification email to the user
-        $this->sendRegistrationEmail($data['email']);
+        // $this->sendRegistrationEmail($data['email']);
 
         return redirect()->to('/login');// Redirect to login page after successful registration
         // return redirect()->to('/login')->with('success', 'Registration successful. Please log in.'); // Redirect to login page after successful registration
     }
 
-    /**
-     * Send registration notification email to the user
-     *
-     * @param string $email
-     */
-    private function sendRegistrationEmail(string $email)
-    {
-        $emailConfig = new Email();
+    // /**
+    //  * Send registration notification email to the user
+    //  *
+    //  * @param string $email
+    //  */
+    // private function sendRegistrationEmail(string $email)
+    // {
+    //     $emailConfig = new Email();
 
-        $email = \Config\Services::email();
-        $email->initialize($emailConfig);
+    //     $email = \Config\Services::email();
+    //     $email->initialize($emailConfig);
 
-        $email->setTo($email);
-        $email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
-        $email->setSubject('Registration Successful');
-        $email->setMessage('Thank you for registering with us.');
+    //     $email->setTo($email);
+    //     $email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+    //     $email->setSubject('Registration Successful');
+    //     $email->setMessage('Thank you for registering with us.');
 
-        $email->send();
-    }
+    //     $email->send();
+    // }
 }

@@ -1,10 +1,10 @@
 <!-- Include head content -->
 <?= view('Admin/common/head'); ?>
+
 <body>
     <!-- ======= Sidebar ======= -->
     <?= view('Admin/common/sidebar'); ?>
     <main id="main" class="main p-0">
-        <?= view('Admin/common/navbar'); ?>
 
         <main class="container mt-2">
             <div class="mb-3 font-weight-bold">USER MANAGEMENT</div>
@@ -125,90 +125,20 @@
                 </thead>
                 <tbody>
                     <!-- User data will be dynamically populated here -->
+                    <?php foreach ($users as $user): ?>
                     <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
+                        <td><?= $user['id'] ?></td>
+                        <td><?= $user['first_name'] ?></td>
+                        <td><?= $user['email'] ?></td>
+                        <td><?= $user['role'] ?></td>
+                        <td><?= $user['phone_number'] ?></td>
                         <td>
                             <!-- Action buttons (e.g., Edit, Delete) -->
                             <button class="btn btn-primary btn-sm">Edit</button>
                             <button class="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>john_doe</td>
-                        <td>john@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <!-- Action buttons (e.g., Edit, Delete) -->
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                    <?php endforeach; ?>
                     <!-- More user rows will be added dynamically -->
                 </tbody>
             </table>

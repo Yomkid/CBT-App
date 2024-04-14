@@ -15,6 +15,8 @@ $routes->get('/exam', 'Pages::exam');
 $routes->get('/review', 'Pages::review');
 $routes->get('/result', 'Pages::result');
 $routes->get('/register', 'Pages::register');
+$routes->get('/admin/users', 'Admin::users');
+$routes->get('/access-denied', 'Pages::access_denied');
 $routes->get('/register', 'Register::register');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/user', 'Admin::user');

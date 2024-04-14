@@ -27,9 +27,9 @@
                             <?php } ?>
 
                             <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" name="username"
-                                    placeholder="Enter username">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your Email Address">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
